@@ -1,0 +1,270 @@
+:root {
+  --color-neutral-0: #ccffff;
+  --color-neutral-10: #add8e6;
+  --color-neutral-30: #000000;
+  --color-neutral-40: #fff;
+  --color-neutral-50: #301934;
+  --color-neutral-60: #FFF9A6;
+  --color-neutral-70: #d9c3ef;
+}
+
+a:hover.nav-link {
+  color: black;
+}
+
+
+a:visited.nav-link {
+  color: #551a8b;
+}
+
+body {
+ background-image: linear-gradient(lightyellow, #d9c3ef);
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  font-size: 1em;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 1em;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+footer {
+  width: 100%;
+  color: var(--color-neutral-30);
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+#footer_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2em;
+}
+#footer_content h3{
+  color: #ff2992;
+  font-family: 'Lora', serif;
+  line-height: 1em;
+
+
+}
+#footer_content p{
+  color:black;
+  font-family: 'Lora', serif;
+  font-size:1.6em;
+  text-align: justify;
+  line-height: 1em;
+
+
+}
+
+
+
+#footer_social_media .footer-link:hover {
+  opacity: 0.6;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+
+#footer_subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#footer_subscribe p {
+  color: var(--color-neutral-30);
+  font-size: 1.6em;
+  font-family:'Lustria', serif;
+  text-align: justify;
+  
+
+}
+
+#footer_social_media {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--color-neutral-40);
+  border-radius: 20%;
+  transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+  font-size: 1.25rem;
+}
+
+
+h1.main {
+  color: #ff2992;
+  text-align: center;
+  display: inline-block;
+  padding: 1em;
+  font-family: 'Lora', serif;
+  margin: 0.25em;
+  line-height: 1em;
+
+
+}
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#input_group {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-neutral-60);
+  border-radius: 4px;
+  text-align: justify;
+  line-height: 1em;
+
+}
+
+#input_group input {
+  all: unset;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+#input_group button {
+  background-color: darkgray;
+  border: none;
+  color: var(--color-neutral-30);
+  padding: 0px 1.25rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 1.5em;
+}
+
+#input_group button:hover {
+  opacity: 0.8;
+}
+
+img.logo {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: none;
+
+}
+
+.loupe {
+  position: relative;
+  left: 10%;
+  top: 20%;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+main {
+  height: 80vh;
+}
+
+@media screen and (max-width: 768px) {
+  #footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
+}
+
+
+p.main{
+  display: inline-block;
+  padding: 1em;
+  font-family: 'Lustria', serif;
+  font-size: 1.6em;
+  margin: 1em;
+  text-align: justify;
+  line-height: 1em;
+
+}
+
+/*navbar*/
+.nav-link,
+nav-item {
+  color: darkviolet;
+  font-size: 2rem;
+    font-family: 'Lora', serif;
+  
+}
+
+
+
+
+.pesquisa {
+  background: none;
+  border: none;
+  outline: none;
+}
+/*navbar*/
+
+
+::placeholder {
+  font-family:'Lustria', serif;
+  color: #ff2992;
+
+}
+
+
+
+/* Barra de pesquisa*/
+
+.search-box {
+  /*position absolute permite alocar seu elemento onde quiser*/
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  /*transform: translate(-40%,-40%);*/
+  background: var(--color-neutral-70);
+  height: 40px;
+  padding: 10px;
+  border-width: 10px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5em;
+
+
+}
+
+.search-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+}
