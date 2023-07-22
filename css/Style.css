@@ -1,11 +1,14 @@
 :root {
-  --color-neutral-0: #ccffff;
   --color-neutral-10: #add8e6;
   --color-neutral-30: #000000;
   --color-neutral-40: #fff;
-  --color-neutral-50: #301934;
-  --color-neutral-60: #FFF9A6;
+  --color-neutral-50: #FFF9A6;
   --color-neutral-70: #d9c3ef;
+  --color-neutral-80: #e6d7f4;
+  --color-neutral-90: #995ed4;
+  --color-neutral-100: #ff2992;
+
+
 }
 
 a:hover.nav-link {
@@ -18,10 +21,9 @@ a:visited.nav-link {
 }
 
 body {
- background-image: linear-gradient(lightyellow, #d9c3ef);
+  background-image: linear-gradient(lightyellow, #d9c3ef, #d9c3ef);
   margin: 0;
   padding: 0;
-  line-height: normal;
   font-size: 1em;
   box-sizing: border-box;
   display: inline-block;
@@ -31,6 +33,24 @@ body {
   align-items: center;
 }
 
+.bg {
+  background-color: var(--color-neutral-80);
+
+}
+
+#btnTop {
+  position: fixed;
+  bottom: 18px;
+  right: 50px;
+  height: 50px;
+  border: none;
+  width: 50px;
+  background: var(--color-neutral-100);
+  border-radius: 100%;
+  font-size: 2em;
+  cursor: pointer;
+  font-weight: bolder;
+}
 
 
 footer {
@@ -44,20 +64,24 @@ footer {
 
 #footer_content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding: 2em;
 }
-#footer_content h3{
-  color: #ff2992;
+
+#footer_content h3 {
+  color: var(--color-neutral-100);
   font-family: 'Lora', serif;
   line-height: 1em;
+  list-style: none;
+  font-style: italic;
+
 
 
 }
-#footer_content p{
-  color:black;
+
+#footer_content p {
   font-family: 'Lora', serif;
-  font-size:1.6em;
+  font-size: 1.6em;
   text-align: justify;
   line-height: 1em;
 
@@ -87,9 +111,9 @@ footer {
 #footer_subscribe p {
   color: var(--color-neutral-30);
   font-size: 1.6em;
-  font-family:'Lustria', serif;
+  font-family: 'Lustria', serif;
   text-align: justify;
-  
+
 
 }
 
@@ -114,9 +138,25 @@ footer {
   font-size: 1.25rem;
 }
 
+#github {
+  list-style: none;
+  font-size: 3em;
+
+}
+
+#github i {
+  color: black;
+  align-items: center;
+}
+
+
+i.bi.bi-github:hover {
+  opacity: 0.6;
+}
+
 
 h1.main {
-  color: #ff2992;
+  color: var(--color-neutral-100);
   text-align: center;
   display: inline-block;
   padding: 1em;
@@ -126,6 +166,7 @@ h1.main {
 
 
 }
+
 #instagram {
   background: linear-gradient(#7f37c9, #ff2992, #ff9807);
 }
@@ -133,10 +174,10 @@ h1.main {
 #input_group {
   display: flex;
   align-items: center;
-  background-color: var(--color-neutral-60);
   border-radius: 4px;
   text-align: justify;
   line-height: 1em;
+  background-color: var(--color-neutral-50);
 
 }
 
@@ -147,7 +188,7 @@ h1.main {
 }
 
 #input_group button {
-  background-color: darkgray;
+  background-color: var(--color-neutral-100);
   border: none;
   color: var(--color-neutral-30);
   padding: 0px 1.25rem;
@@ -201,10 +242,17 @@ main {
   }
 }
 
+.nav-link,
+nav-item {
+  color: darkviolet;
+  font-size: 2rem;
+  font-family: 'Lora', serif;
 
-p.main{
+}
+
+
+p.main {
   display: inline-block;
-  padding: 1em;
   font-family: 'Lustria', serif;
   font-size: 1.6em;
   margin: 1em;
@@ -214,32 +262,18 @@ p.main{
 }
 
 /*navbar*/
-.nav-link,
-nav-item {
-  color: darkviolet;
-  font-size: 2rem;
-    font-family: 'Lora', serif;
-  
-}
-
-
-
-
 .pesquisa {
   background: none;
   border: none;
   outline: none;
 }
-/*navbar*/
-
 
 ::placeholder {
-  font-family:'Lustria', serif;
-  color: #ff2992;
-
+  font-family: 'Lustria', serif;
+  color:var(--color-neutral-90);
+  font-style: italic;
+  font-size: 1.5em;
 }
-
-
 
 /* Barra de pesquisa*/
 
