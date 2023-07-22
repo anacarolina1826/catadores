@@ -1,2 +1,2 @@
 # catadores
-Desenvolvedor de site para uma associação de catadores em Sabará-MG
+Desenvolver um de site para uma associação de catadores em Sabará-MG
