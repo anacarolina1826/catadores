@@ -1,0 +1,228 @@
+.footer-link {
+  text-decoration: none;
+}
+
+#footer_content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2em;
+}
+
+#footer_content h3 {
+  color: var(--color-neutral-100);
+  font-family: 'Lora', serif;
+  line-height: 1em;
+  list-style: none;
+  font-style: italic;
+
+
+
+}
+
+#footer_content p {
+  font-family: 'Lora', serif;
+  font-size: 1.6em;
+  text-align: justify;
+  line-height: 1em;
+
+
+}
+
+
+
+#footer_social_media .footer-link:hover {
+  opacity: 0.6;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+
+}
+
+#footer_social_media {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--color-neutral-40);
+  border-radius: 20%;
+  transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+  font-size: 1.25rem;
+}
+
+#github {
+  list-style: none;
+  font-size: 3em;
+
+}
+
+#github i {
+  color: black;
+  align-items: center;
+}
+
+
+i.bi.bi-github:hover {
+  opacity: 0.6;
+}
+
+
+
+
+
+
+footer {
+  width: 100%;
+  color: var(--color-neutral-30);
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+#footer_content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2em;
+}
+
+
+
+nav-item:hover::after {
+  height: .2em;
+}
+
+@media (max-width: 1199px) {
+  p {
+    font-size: 58px;
+  }
+}
+
+@media (max-width: 991px) {
+  p {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 767px) {
+  p {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 575px) {
+  p {
+    font-size: 26px;
+  }
+}
+
+
+
+
+#footer_content h3 {
+  color: var(--color-neutral-100);
+  font-family: 'Lora', serif;
+  line-height: 1em;
+  list-style: none;
+
+
+
+}
+
+#footer_content p {
+  font-family: 'Lora', serif;
+  font-size: 1.6em;
+  text-align: justify;
+  line-height: 1em;
+
+
+}
+
+
+
+#footer_social_media .footer-link:hover {
+  opacity: 0.6;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+
+}
+
+#footer_social_media {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--color-neutral-40);
+  border-radius: 20%;
+  transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+  font-size: 1.25rem;
+}
+
+#github {
+  list-style: none;
+  font-size: 3em;
+
+}
+
+#github i {
+  color: black;
+  align-items: center;
+}
+
+
+i.bi.bi-github:hover {
+  opacity: 0.6;
+}
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
+}
