@@ -124,10 +124,13 @@ img.logo {
 
 .link-c{
   color: var(--color-neutral-90) !important;
+  font-size:1.3em;
 }
 .link-c:hover{
   color: var(--color-neutral-100) !important;
   background:transparent !important;
+  text-decoration: underline;
+	text-decoration-color: var(--color-neutral-100);
 }
 
 .link-cc{
@@ -146,21 +149,20 @@ main {
   text-decoration: none;
   font-size: 1.3em !important;
 }
+
 .nav-link:hover {
-  color:var(--color-neutral-100)!important;
+  color:var(--color-neutral-100);
   text-decoration: underline;
-	text-decoration-color:var(--color-neutral-10)!important;
+	text-decoration-color: var(--color-neutral-100);
 
 }
-.dropdown-item{  
-  font-size: 1.3em !important;
+nav-item:hover {
+  text-decoration: underline;
+	text-decoration-color:var(--color-neutral-90);
+
 }
 
 
-dropdown-item:hover{
-  color: var(--color-neutral-100)!important;
-  
-}
 
 
 
