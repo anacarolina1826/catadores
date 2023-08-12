@@ -22,11 +22,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap" rel="stylesheet">
+
+  
  
 
 
   <title> Associação Mãos Amigas</title>
 
+<link rel="shortcut icon" type="imagex/png" href="/img/logo.ico">
 
 
 </head>
@@ -42,108 +45,89 @@
         <img class="loupe" src="./img/loupe.svg" alt="">
       </a>
     </div>
-
-  <nav class="navbar navbar-expand-md navbar-light bg" style="background: transparent;">
-    <a class="navbar-brand fs-3 ms-3" href=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
-      <i class="bi bi-list"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="btn">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <img  style="font-size: 40px;" src="/img/logo.jpg" alt="logo" class="logo" width=150 height=150>
-
-            </li>
-
-         <li class="nav-item">
-          <a href="index.html" class="nav-link mx-3 fs-5">Home</a>
-        </li>
-       
-        <li class="nav-item">
-          <a href="/templetes/reciclaveis.html" class="nav-link mx-3 fs-5">Recicláveis</a>
-        </li>
-        <li class="nav-item">
-          <a href="/templetes/about.html" class="nav-link mx-3 fs-5">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link mx-3 fs-5"></a>
-        </li>
-        
-      
-        <li class="nav-item">
-          <a href="#" class="nav-link mx-3 fs-5">Trajeto</a>
-        </li>
-
-      </ul>
-  </nav>
-  <!--navbar responsiva funcionar-->
+  
+  <!--navbar-->
 <nav class="navbar navbar-expand-lg">
   <a class="navbar-brand">
     <img class="logo" src="/img/logo.jpg" > 
   </a>
+  <!--.navbar-toggler para uso com nosso plug-in de recolhimento e outros comportamentos de alternância de navegação.-->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="nav-icon"><i class="bi bi-list-stars"></i></span>
   </button>
+  
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav ms-auto">
       <li class="nav-item">
         <a class="nav-link mx-3 fs-5" href="#">Home</a>
       </li>
-          <li class="nav-item">
-        <a class="nav-link mx-3 fs-5" href="/templetes/about.html">Quem somos?</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mx-3 fs-5" href="/templetes/fotos.html">Fotos</a>
-      </li>
-  
-
+     
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Recicláveis
-        </a>
+        <a class="nav-link dropdown-toggle mx-3 fs-5" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Quem somos?        </a>
+        <div class="dropdown-menu link-cc mx-3 fs-5" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item link-c mx-3 fs-5" href="/templetes/about.html">Sobre nós </a>
+          <a class="dropdown-item link-c mx-3 fs-5" href="#">#</a>
+          <a class="dropdown-item link-c mx-3 fs-5" href="#">#</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle mx-3 fs-5" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Fotos</a>
         <div class="dropdown-menu link-cc" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item link-c" href="/templetes/reciclaveis.html">Materiais reciclaveis</a>
-          <a class="dropdown-item link-c" href="#">Atlas de reciclagem</a>
-          <a class="dropdown-item link-c" href="#">#</a>
+          <a class="dropdown-item link-c mx-3 fs-5" href="/templetes/fotos.html">Foto</a>
+          <a class="dropdown-item link-c mx-3 fs-5" href="#">#</a>
+          <a class="dropdown-item link-c mx-3 fs-5" href="#">#</a>
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle mx-3 fs-5" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Recicláveis</a>
+        <div class="dropdown-menu link-cc" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item link-c mx-3 fs-5" href="/templetes/reciclaveis.html">Materiais</a>
+
+          <a class="dropdown-item link-c mx-3 fs-5" href="#">Atlas de reciclagem</a>
         </div>
       </li>
     </ul>
+  
+
   </div>
 </nav>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
   <main>
-    <h1 class="main"> Associação mãos amigas</h1>
+    <h1 class="main"> Associação Mãos Amigas</h1>
   <p class="main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et turpis id ante cursus hendrerit
     a velit. Sed quis mauris mauris. Etiam fermentum orci ut maximus finibus. Aenean facilisis ac erat eleifend
-    pharetra. Ut rutrum ut nisl non elementum. Integer condimentum felis sed dolor ornare placerat vitae ac mi. Nam
-    hendrerit mi et neque tincidunt elementum. Cras urna mauris, imperdiet a dignissim ut, venenatis nec eros.</p>
+</p>
 
     <h2 class="main">Metas</h2>
   <p class="main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et turpis id ante cursus hendrerit
-    a velit. Sed quis mauris mauris. Etiam fermentum orci ut maximus finibus. Aenean facilisis ac erat eleifend
-    pharetra. Ut rutrum ut nisl non elementum. Integer condimentum felis sed dolor ornare placerat vitae ac mi. Nam
-    hendrerit mi et neque tincidunt elementum. Cras urna mauris, imperdiet a dignissim ut, venenatis nec eros.</p>
+    a velit. Sed quis mauris mauris. Etiam fermentum orci ut maximus finibus. Aenean facilisis ac erat eleifend.
+  </p>
+    <!--
+    <nav class="menu">
     
-    <h2 class="main">lorem</h2>
-  <p class="main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et turpis id ante cursus hendrerit
-    a velit. Sed quis mauris mauris. Etiam fermentum orci ut maximus finibus. Aenean facilisis ac erat eleifend
-    pharetra. Ut rutrum ut nisl non elementum. Integer condimentum felis sed dolor ornare placerat vitae ac mi. Nam
-    hendrerit mi et neque tincidunt elementum. Cras urna mauris, imperdiet a dignissim ut, venenatis nec eros.</p>
-    
+    <a href="https://web.whatsapp.com" class="ativo" data-menu> <img class="whats" src="/img/whatsapp.png"></a> 
+         <a href="#loupe" class="ativo" data-menu> <img src="/img/loupe.svg"></a> 
+         <a href="#loupe" class="ativo" data-menu> <img src="/img/loupe.svg"></a> 
     
 
+  </nav>
+  <script type="text/javascript" src="script.js"> </script>
+ -->  
   </main>
-
-  
+    
  <footer>
     <div id="footer">
       <div id="footer_redes">
-        <h3 class="footer">Siga-nos nas redes sociais.</h3>
+        <h3 class="footer">Siga-nos nas redes sociais</h3>
         <a href="https://www.instagram.com/associacaomaosamigas.acma/" id="instagram" class="instagram">
             <i class="bi bi-instagram"></i>
         </a>
+        
         <!--
         <a href="#" id="facebook">
           <i class="bi bi-facebook"></i>
@@ -157,19 +141,18 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.295261535359!2d-43.855392124878776!3d-19.869750481505207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69d869484e74b%3A0x82055210fc46869a!2sCooperativa%20de%20Catadores%20M%C3%A3os%20Amigas!5e0!3m2!1spt-BR!2sbr!4v1691356992683!5m2!1spt-BR!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <address>
           <p class="footer">Rua Ubá - Carvalho de Brito, Sabará - MG, 34590-160</p>
-          <p class="footer">Contato: (31) 998291336</p>
+          <p> Contato:</p>
+          <a href="https://api.whatsapp.com/send?phone=5531995737268&text= Olá! Como podemos ajudar? Somos a Aaaociação Mãos Amigas. Horário de funcionamento: Seg- Sextas 08h-16h"
+    target="_blank"
+    style="position:relative;bottom:20px;left:20px; width: 10px;">
+<img class="wh" src="/img/whatsapp.png" alt="Contato pelo WhatsApp"/>      
+          </a>
           <P class="footer"> Horário de funcionamento: Seg-Sexta:08:30-16:30</P>
         </address>
         
       </div>
-   
-  </footer>
-
-
-
-
-
-<!-- botão voltar ao topo-->
+      </footer>
+      <!-- botão voltar ao topo-->
   
   
   <a onclick="topFunction()" id="linktopo" href="#"><i class="bi bi-caret-up-fill"></i></a>
@@ -190,8 +173,18 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }  
-</script>      
-		-->							
+</script>
+  <a href="https://api.whatsapp.com/send?phone=5531995737268&text= Olá! Como podemos ajudar? Somos a Aaaociação Mãos Amigas. Horário de funcionamento: Seg- Sextas 08h-16h"
+    target="_blank"
+    style="position:relative;bottom:20px;left:20px; width: 10px;">
+<img class="wh" src="/img/whatsapp.png" alt="Contato pelo WhatsApp"/>      
+          </a>
+          
+
+
+
+      </body>
+      </html>
 
 
 
@@ -199,13 +192,3 @@ function topFunction() {
 
 
 
-
-
-
-  
-  
-
-
-</body>
-
-</html>
