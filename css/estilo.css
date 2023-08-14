@@ -36,6 +36,25 @@ body {
   align-items: center;
 }
 
+.dropdown-item{
+  color: var(--color-110) !important;
+  font-size:1.3em;
+  padding: 0.50em;
+  margin: 0.50em;
+}
+.dropdown-item:hover{
+ /* color: var(--color-neutral-100) !important;*/
+  color: gray !important;
+  background:transparent !important;
+  text-decoration: underline;
+	/*text-decoration-color: var(--color-100);*/
+  	text-decoration-color:#404040;
+
+}
+.dropdown-menu{
+  background-color: transparent;
+}
+
 footer {
  width: 100%;
   display:flex;
@@ -91,8 +110,16 @@ iframe{
 
 #instagram {
   background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+  align-items: center;
 }
-
+#instagram:hover{
+  opacity:0.8
+    /*
+  transition-property: all;
+  transition-duration: 4s;
+  transition-timing-function:ease ;
+  */
+}
 
 img.logo {
   width: 120px;
@@ -119,20 +146,16 @@ img.logo {
 .link-c{
   color: var(--color-110) !important;
   font-size:1.3em;
-  padding: 0.50em;
-  margin: 0.50em;
 }
-.dropdown-item:hover{
- /* color: var(--color-neutral-100) !important;*/
-  color: gray !important;
-  background:transparent !important;
-  text-decoration: underline;
-	/*text-decoration-color: var(--color-100);*/
-  	text-decoration-color:#404040;
 
-}
+
+
 .links{
-    margin:0.8em;
+    margin:0.8em;  
+    border-radius: 50%;
+    align-items: center;
+  justify-items: center;
+
 }
 
 .links:hover{
