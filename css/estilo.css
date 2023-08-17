@@ -12,12 +12,16 @@
   --color-110: #662ba1;
 }
 
-
 body {
-
+  /* background-image: linear-gradient(lightyellow, #d9c3ef, #d9c3ef);*/
+  /*  background: linear-gradient(to left, lightyellow,#d9c3ef,#d9c3ef);
+  background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);*/
+  background: linear-gradient( to right lightyellow 30%, #d9c3ef 90%, lightblue);
+    background-repeat: no-repeat;
+  background-size: 100%;
   margin: 1em;
+    width:90%;
   min-height: 100vh;
-  background-size: cover;
   padding: 0;
   line-height: 1em;
   justify-content: center;
@@ -39,7 +43,7 @@ body {
   text-decoration-color: #404040;
 }
 .dropdown-menu {
-  background-color: var(--color-10);
+  background-color:#ffffcc;
 }
 div.footer {
   position: relative;
@@ -47,14 +51,9 @@ div.footer {
 }
 
 footer {
-  
   width: 100%;
   display: flex;
   color: var(--color-30);
-  justify-content: space-around;
-  margin-left: 30px;
-
-
 }
 #github {
   background-color: black;
@@ -134,7 +133,8 @@ img.logo {
   outline: none;
   cursor: pointer;
   padding: 15px;
-  font-size:25px;
+  border-radius: 25%;
+  font-size: 42px;
 }
 .links {
   margin: 0.8em;
@@ -155,40 +155,10 @@ main {
 }
 
 @media screen and (max-width: 700px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-  }
-
-   
-
-  
-
-
-  p.footer {
-    font-size: 1em;
-  }
-  h1.main {
-    display: inline-block;
-    font-size: 2em;
-    text-align: center;
-  }
-  h2.main {
-    display: inline-block;
-    font-size: 2em;
-    text-align: center;
-  }
-  p.main {
-    font-size: 0.9em;
-    margin: 2em;
-    text-align: justify;
-  }
-
   .contatos {
-    margin:1.4em 
-  }
-  .nav-link {
-    margin: 0.2em;
+    margin:1.4em;
+    position:relative;
+    left:16px;
   }
 
   div.footer {
@@ -198,58 +168,84 @@ main {
     /*margin: 2rem;*/
     font-weight: normal;
   }
+    .dropdown-menu {
+    background-color: transparent;
+  }
+
+   footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+   #github {
+    background-color: black;
+  }
+  
+  h1.main {
+    display: inline-block;
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  h2.main {
+    display: inline-block;
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  iframe {
+    margin: 2em;
+    width: 200px;
+    height: 200px;
+    border: 0;
+    position:relative;
+    right:40px;  
+  }
+  
+  img.logo{
+    padding:1.3em;
+    position:relative;
+    left:1px;
+  }
+
+    main {
+    padding: 1.4rem;
+    position: relative;
+    right: 40px;
+  }
+ 
+  .nav-link {
+    margin: 0.2em;
+  }
+  
+  .p{
+  letter-spacing:-0.12em;
+  }
+  
+  p.footer {
+    font-size: 1em;
+  }
+  
+    p.main {
+    font-size: 0.9em;
+    margin: 2em;
+    text-align: justify;
+  }
+  
+  redes {
+    position: relative;
+    right: 60px;
+  }
+
   #whats {
     margin: 2em;
     border-radius: 50%;
     position: relative;
     left: 180px;
-  }
-  #github {
-    background-color: black;
-  }
-  
-  
-  
-
-
-  .redes {
-    position: relative;
-    right: 60px;
-  }
-
-  iframe {
-    margin: 2em;
-    width: 300px;
-    height: 300px;
-    border: 0;
-  }
-  img.logo{
-    padding:1.3em
-  }
-  
-
-  main {
-    padding: 1.4rem;
-    position: relative;
-    right: 40px;
-  }
-  /*
-  .endereço {
- padding: 1.3em;
-  }
-*/
-  .dropdown-menu {
-    background-color: transparent;
-  }
+  }  
 }
-body {
-  background-image: linear-gradient(to right, lightyellow,lightyellow, #d9c3ef, lightblue);
-  background-repeat: no-repeat;
-  margin: 1em;
-  padding: 0;
-  line-height: 1em;
-  align-items: center;
-}
+
+/*fim media queries*/
 
 .nav-link {
   color: var(--color-110);
@@ -285,9 +281,12 @@ p.main {
 
 p.footer {
   font-family: "Lora", serif;
-  font-size: 1.1em;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0;
   text-align: justify;
   line-height: 1em;
+  position: relative;
   right: 30px;
 }
 
