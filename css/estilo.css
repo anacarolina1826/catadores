@@ -12,15 +12,9 @@
   --color-110: #662ba1;
 }
 
-address {
-  margin: 1em;
-  padding: 0.3em;
-}
+
 body {
-  /* background-image: linear-gradient(lightyellow, #d9c3ef, #d9c3ef);*/
-  /*  background: linear-gradient(to left, lightyellow,#d9c3ef,#d9c3ef);
-  background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);*/
-  background: linear-gradient(lightyellow 30%, #d9c3ef 90%, lightblue);
+
   margin: 1em;
   min-height: 100vh;
   background-size: cover;
@@ -53,9 +47,14 @@ div.footer {
 }
 
 footer {
+  
   width: 100%;
   display: flex;
   color: var(--color-30);
+  justify-content: space-around;
+  margin-left: 30px;
+
+
 }
 #github {
   background-color: black;
@@ -209,6 +208,9 @@ main {
   #github {
     background-color: black;
   }
+  
+  
+  
 
 
   .redes {
@@ -283,12 +285,9 @@ p.main {
 
 p.footer {
   font-family: "Lora", serif;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0;
+  font-size: 1.1em;
   text-align: justify;
   line-height: 1em;
-  position: relative;
   right: 30px;
 }
 
