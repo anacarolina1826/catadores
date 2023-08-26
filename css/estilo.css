@@ -13,20 +13,22 @@
 }
 
 body {
-  /* background-image: linear-gradient(lightyellow, #d9c3ef, #d9c3ef);*/
-  /*  background: linear-gradient(to left, lightyellow,#d9c3ef,#d9c3ef);
-  background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);*/
-  background: linear-gradient( to right lightyellow 30%, #d9c3ef 90%, lightblue);
-    background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 1em;
-    width:90%;
+background: rgb(255,255,224);
+background: linear-gradient(90deg, rgba(255,255,224,1) 0%, rgba(217,195,239,1) 35%, rgba(173,216,230,1) 100%);
+  margin: 2em;
   min-height: 100vh;
   padding: 0;
   line-height: 1em;
   justify-content: center;
   align-items: center;
+  font-size: 1.2em;
 }
+
+  .icons {
+    position:relative;
+    left:2px;
+  }
+
 
 .dropdown-item {
   color: var(--color-110) !important;
@@ -34,6 +36,7 @@ body {
   padding: 0.5em;
   margin: 0.5em;
 }
+
 .dropdown-item:hover {
   /* color: var(--color-neutral-100) !important;*/
   color: gray !important;
@@ -42,21 +45,28 @@ body {
   /*text-decoration-color: var(--color-100);*/
   text-decoration-color: #404040;
 }
+
 .dropdown-menu {
-  background-color:#ffffcc;
+  background-color: #ffffcc;
 }
-div.footer {
-  position: relative;
-  left: -3em;
-}
+
+
+
 
 footer {
   width: 100%;
   display: flex;
   color: var(--color-30);
+  align-items: stretch;
 }
+
 #github {
   background-color: black;
+
+}
+
+#github:hover {
+  opacity: 0.8;
 }
 
 h1.main {
@@ -67,8 +77,6 @@ h1.main {
   font-family: "Lustria", serif;
   line-height: 1em;
   font-weight: normal;
-  font-size: 2em;
-  margin: 1em;
   text-align: justify;
 }
 
@@ -80,8 +88,6 @@ h2.main {
   line-height: 1em;
   font-weight: normal;
   color: var(--color-110);
-  margin: 1em;
-  font-size: 2em;
   text-align: justify;
 }
 
@@ -91,14 +97,12 @@ h3.footer {
   */
   color: var(--color-110);
   font-family: "Lustria", serif;
-  font-size: 2rem;
   font-weight: normal;
 }
 
 iframe {
-  margin: 1em;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border: 0;
   position: relative;
   right: 15px;
@@ -107,8 +111,8 @@ iframe {
 #instagram {
   background: linear-gradient(#7f37c9, #ff2992, #ff9807);
   align-items: center;
-  margin: 0.8;
 }
+
 #instagram:hover {
   opacity: 0.8;
   /*
@@ -123,22 +127,23 @@ img.logo {
   height: 120px;
 }
 
-#linktopo{
+#linktopo {
   position: fixed;
+  right: 10px;
   bottom: 20px;
   color: black;
   background-color: var(--color-80);
-  right: 20px;
   z-index: 9999;
   outline: none;
   cursor: pointer;
   padding: 15px;
   border-radius: 25%;
-  font-size: 42px;
+  font-size: 1em;
 }
+
 .links {
-  margin: 0.8em;
   border-radius: 50%;
+  margin: 1em;
 }
 
 .links:hover {
@@ -155,11 +160,7 @@ main {
 }
 
 @media screen and (max-width: 700px) {
-  .contatos {
-    margin:1.4em;
-    position:relative;
-    left:16px;
-  }
+
 
   div.footer {
     color: var(--color-110);
@@ -168,81 +169,75 @@ main {
     /*margin: 2rem;*/
     font-weight: normal;
   }
-    .dropdown-menu {
+
+  .dropdown-menu {
     background-color: transparent;
   }
 
-   footer {
+  footer {
     display: flex;
     flex-direction: column;
   }
-  
-   #github {
+
+  #github {
     background-color: black;
   }
-  
+
   h1.main {
-    display: inline-block;
-    font-size: 2em;
-    text-align: center;
+    font-size: 1em;
   }
+
   
-  h2.main {
-    display: inline-block;
-    font-size: 2em;
-    text-align: center;
-  }
-  
+
   iframe {
     margin: 2em;
     width: 200px;
     height: 200px;
     border: 0;
-    position:relative;
-    right:40px;  
-  }
-  
-  img.logo{
-    padding:1.3em;
-    position:relative;
-    left:1px;
   }
 
-    main {
-    padding: 1.4rem;
+  img.logo {
+    padding: 1.3em;
+    position: relative;
+    left: 1px;
+  }
+  
+  .icons {
+    position:relative;
+    right:30px;
+  }
+
+
+
+  main {
+    padding: 1.2rem;
     position: relative;
     right: 40px;
+   font-size:1em;
+    text-align: justify;
+
+
   }
- 
+
   .nav-link {
     margin: 0.2em;
   }
-  
-  .p{
-  letter-spacing:-0.12em;
-  }
-  
+
+
+
   p.footer {
     font-size: 1em;
   }
-  
-    p.main {
-    font-size: 0.9em;
-    margin: 2em;
-    text-align: justify;
-  }
-  
-  redes {
-    position: relative;
-    right: 60px;
-  }
+
+
+
 
   #whats {
     margin: 2em;
     border-radius: 50%;
     position: relative;
     left: 180px;
-  }  
+  }
 }
 
 /*fim media queries*/
@@ -253,6 +248,7 @@ main {
   font-size: 1.3em !important;
   font-family: "Lora", serif;
 }
+
 .nav-link:hover {
   /*color:var(--color-100);*/
   color: gray;
@@ -269,29 +265,17 @@ main {
 #nav-icon:hover {
   color: var(--color-90);
 }
+
 p.main {
   font-family: "Lora", serif;
   line-height: 1em;
   font-weight: normal;
   color: var(--color--30);
   font-size: 1.2em;
-  margin: 1em;
   text-align: justify;
-}
-
-p.footer {
-  font-family: "Lora", serif;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0;
-  text-align: justify;
-  line-height: 1em;
-  position: relative;
-  right: 30px;
 }
 
 #whats {
   background: #25d366;
   align-items: center;
-  margin: 0.8;
 }
