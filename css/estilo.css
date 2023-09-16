@@ -11,6 +11,7 @@
   --color-110: #662ba1;
 }
 
+ 
 body {
 background: rgb(255,255,224);
 background: linear-gradient(180deg, rgba(255,255,224,1) 0%, rgba(217,195,239,1) 35%, rgba(173,216,230,1) 100%);
@@ -43,11 +44,14 @@ background: linear-gradient(180deg, rgba(255,255,224,1) 0%, rgba(217,195,239,1) 
   background-color:transparent;
 }
 
+
+
+
 footer {
   width: 100%;
   color:black;
   display: flex;
-  margin:1.3em;
+  margin:1.4em;
 }
 
 #github {
@@ -111,6 +115,9 @@ img.logo {
   height: 120px;
 }
 
+icons{
+  margin: 20px;
+}
 
 #linktopo {
   position: fixed;
@@ -223,15 +230,15 @@ justify-content: left;
 .nav-link {
   color: var(--color-110);
    margin: 0.2em;
-  text-decoration: none;
   font-size: 1.3em !important;
   font-family: "Lora", serif;
+  
 }
 
 .nav-link:hover {
   color: gray;
-  text-decoration: underline;
-  text-decoration-color: gray;
+text-decoration: underline;
+  text-decoration-color:black ;
 }
 
 #nav-icon {
