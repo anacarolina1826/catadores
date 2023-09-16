@@ -144,6 +144,12 @@ main {
   height: 80vh;
 }
 
+.main{
+  width: 100%;
+  margin: 0.25px;
+  
+}
+
 
 @media screen and (max-width: 700px) {
   .contatos {
