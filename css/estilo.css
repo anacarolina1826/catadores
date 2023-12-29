@@ -11,17 +11,80 @@
   --color-110: #662ba1;
 }
 
- 
+/*menu*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  background-color:#87F585;
+}
+
+.logo {
+    display: flex;
+  align-items: left;
+}
+
+
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color:black;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color:ye;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+}
 body {
-background: rgb(255,255,224);
-background: linear-gradient(180deg, rgba(255,255,224,1) 0%, rgba(217,195,239,1) 35%, rgba(173,216,230,1) 100%);
+background-color:white;
+ /* background: linear-gradient(180deg, rgba(255,255,224,1) 0%, rgba(217,195,239,1) 35%, rgba(173,216,230,1) 100%);*/
   min-height: 100vh;
   font-size:1.2em;
   padding: 0;
-  margin:1em;
   width: 100%;
 }
-
+html{
+  scroll-behavior: smooth;
+}
+a:link{
+  color:black;
+  text-decoration: nne;
+}
+a:hover{
+  color: red;
+}
+a: :visited{
+  color:blue;
+}
 
 
 
@@ -221,11 +284,6 @@ justify-content: left;
     left:1px;
   }
 
-    main {
-    padding: 1.4rem;
-    position: relative;
-    right: 40px;
-  }
   
 .nav-link {
   color: var(--color-110);
