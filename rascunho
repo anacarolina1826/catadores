@@ -1,0 +1,156 @@
+<!--
+<footer class="footer">
+
+ <div class="img">
+   <h3 class="footer"> Logo</h3>
+   <img class="logo" src="/img/logo.jpg">
+ </div>
+
+    <div class="endereço" style="line-height:1.8em;">
+      <h3 class="footer"> Localização</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.295261535359!2d-43.855392124878776!3d-19.869750481505207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69d869484e74b%3A0x82055210fc46869a!2sCooperativa%20de%20Catadores%20M%C3%A3os%20Amigas!5e0!3m2!1spt-BR!2sbr!4v1691356992683!5m2!1spt-BR!2sbr"  style=" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <address>
+        <p id="footer" class="footer" >Rua Ubá - Carvalho de Brito,
+         <p class="footer"> Sabará/ MG, Cep.: 34590-160</p>
+        </p>
+        <p class="footer" id="footer"> </p>
+        <P class="footer p"> Horário de funcionamento:</P>
+        <p class="footer">Seg-Sexta:  08:30-16:30</p>
+        <p><i class="fa-solid fa-phone" style="color: #000000;"></i> (31) 998291336</p>
+      </address> 
+    </div>
+
+   <div class="redes">
+
+      <h3 class="footer">Nossas redes sociais</h3>
+     <div class="icons">
+      <!-- Whatsapp-->
+  <!--
+      <a id="whats" class="btn btn-primary links" style="color:white; background-color:#25d366;" href= https://wa.me/553195737268 role="button"> 
+    <i class="fab fa-whatsapp"></i> 
+      </a>
+   <!-- Instagram-->
+  <!--
+<a  id="instagram" class="btn btn-primary" href="https://www.instagram.com/associacaomaosamigas.acma/" role="button">
+<i class="fab fa-instagram"></i>
+</a>
+     <a id="github" class="btn btn-primary  links" href="https://github.com/anacarolina1826/catadores" role="button">
+<i class="fab  fa-github"></i> 
+     </a>
+
+   </div>
+ </div>
+   <!--
+ </div>
+ <div class="text-center p-4" style="background-color:white">
+  © 2022 Copyright:|Ana Carolina Barbosa| IFMG
+  </div>
+
+    </footer>
+
+</div>
+
+
+
+
+
+
+/*background: linear-gradient(#7f37c9, #ff2992, #ff9807);*/
+
+div.footer {
+    color: var(--color-110);
+    font-family: "Lustria", serif;
+    font-size: 2em;
+    /*margin: 2rem;*/
+    font-weight: normal;
+  }
+
+
+    div.icons{
+justify-content: left;
+  }
+
+  
+
+h3.footer {
+  font-family: "Lustria", serif;
+  font-weight: normal;
+       font-size:1.4em;
+  color: var(--color-110);
+
+}
+:root {
+  --color-10:#87F585;
+  --color-20: orange;
+  --color-40: #fff;
+  --color-50: lightyellow;
+  --color-60: red;
+  --color-70: #d9c3ef;
+  --color-80: #e6d7f4;
+  --color-90: #995ed4;
+  --color-100: #ff2992;
+  --color-110: #662ba1;
+}
+
+div>
+<aside class="card" style="width:18rem; background-color: lightgreen;">
+  <h3> Tópicos</h3>
+  <ul>
+    <li> <a href="#titulo">Introdução</li>
+    <li> <a href="#titulo02"> fotos</li>
+
+  </ul>
+  </aside>
+</div>
+
+/* background: linear-gradient(180deg, rgba(255,255,224,1) 0%, rgba(217,195,239,1) 35%, rgba(173,216,230,1) 100%);
+
+      <!-- Carosse
+    </div>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/img/coracao.jpeg">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/img/coração.webp">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/img/co.png">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+-->
+
+  </main>
+
+
+
+    <!-- botão voltar ao topo-->
+  <script src="assets/js/script.js"></script>
+
+  <a onclick="topFunction()" id="linktopo" href="#"><i class="fa-solid fa-caret-up fa-beat"> </i> 
+  </a>
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("linktopo").style.display = "block";
+    } else {
+       document.getElementById("linktopo").style.display = "none";
+    }
+}
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}  
+</script>
